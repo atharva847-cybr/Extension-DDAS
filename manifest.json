@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Download Duplicate Checker",
+    "version": "1.0",
+    "description": "Detects if a file is already downloaded and shows an alert.",
+    "permissions": [
+      "downloads",
+      "storage",
+      "notifications"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "128": "icon.png"
+    }
+  }
+  
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Notification</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Notification Panel -->
+    <div id="notification-panel" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <h2 class="text-xl font-bold text-gray-800">Duplicate File Detected</h2>
+            <p id="file-location" class="mt-2 text-gray-600">The file already exists at:</p>
+            <div class="mt-4">
+                <button id="show-location-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Show Location</button>
+                <button id="download-anyway-btn" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700 ml-2">Download Anyway</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simulated Download Button -->
+    <div class="flex justify-center items-center h-screen">
+        <button id="download-btn" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700">Download File</button>
+    </div>
+
+    <script src="background.js"></script>
+</body>
+</html>
